@@ -167,7 +167,7 @@ main {
 }
 
 .card-images {
-background-color: white;
+background-color: #ffebdb;
 border-radius: 6px;
 position: relative;
 /* al poner un ancho fijo solo esta pensado para que entren 3 elementos*/
