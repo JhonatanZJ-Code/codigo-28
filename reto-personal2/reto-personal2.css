@@ -1,0 +1,220 @@
+/*Reset basico*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: "Barlow",sans-serif;
+    background-color: hsl(198, 95%, 62%);
+    color: #fff;
+    text-align: center;
+    
+        
+    
+}
+
+
+/*
+p {
+  font-family: "Fraunces",sans-serif;
+} 
+  */
+
+/*estilo de los links*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*menu de hamburgersa en mobile y en desktop normal*/
+
+.menu {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 28px;
+    /*test de caja*/
+    /* border: solid red; */
+}
+
+.logo > img {
+width: 160px;
+}
+
+.hamburger-menu {
+display: flex;
+flex-direction: column;
+gap: 28px;
+}
+.hamburger-menu a {
+  font-family: "Barlow",sans-serif;
+  font-weight: 600;
+  color: #fff;
+
+}
+
+
+.menu > ul > li > a:hover {
+  background-color: hsl(198, 89%, 58%);
+  padding: 6px;
+  border-radius: 12px;
+}
+
+ul {
+  list-style: none;
+}
+.orange-background{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+
+}
+
+.titulo {
+  color: #fff;
+}
+
+.titulo{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.titulo h1 {
+font-family: "Frances",serif;
+font-weight: 900;
+font-size: 18px;
+letter-spacing: 1.5px;
+text-transform: uppercase;
+margin-bottom: 12px;
+
+
+}
+
+.arrow-down img {
+  width: 28px;
+}
+
+.image-header img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.container-reverse {
+  flex-direction: column-reverse;
+}
+
+/*.card le puse de nombre testimonials*/
+.testimonials{
+  background-color: hsl(45, 29%, 95%); /* color del fondo crema */
+  color: hsl(212, 27%, 19%); /* color del texto */
+  padding: 80px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.testimonials > div>img{
+  border-radius: 50%;
+  border: solid 2px hsl(50, 27%, 82%);
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: #fff;
+}
+
+.testimonials p{
+font-family: "Barlow",sans-serif;
+font-size: 14px;
+line-height: 1,8;
+color: hsl(210, 4%, 40%);
+}
+
+.testimoniasl h1{
+  font-family: "Fraunces",serif;
+  font-weight: 800;
+  color: hsl(210, 4%, 40%);
+}
+.testimonials span{
+  font-family: "Fraunces",serif;
+  font-weight: 700 ;
+  color: hsl(212, 27%, 19%);
+}
+
+
+
+
+@media (min-width: 720px) {
+  
+  .menu{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px; 
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .hamburger-menu{
+    flex-direction: row;
+    gap: 40px;
+  }
+  .titulo h1 {
+    font-size: 48px;
+    letter-spacing: 1.5px;
+  }
+  .arrow-down img{
+    width: 40px;
+  }
+
+  .titulo{
+    padding-top: 60px;
+  }
+
+  .testimonials {
+    flex-direction: column;
+  }
+
+  .testimonials h1{
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+  .testimonials div{
+    max-width: none;
+  }
+
+  .testimonials .emily {
+    flex: 1;
+  }
+   .testimonials .thomas {
+    flex: 1;
+  }
+   .testimonials .jennie {
+    flex: 1;
+  }
+
+
+}
+
+
