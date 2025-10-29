@@ -1,49 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="./reto-3.css">
-    <title>Reto-3</title>
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reto-3.css" />
+  </head>
+  <body>
     <header>
-            <nav>
-                <!--LOGO-->
-                <div class="logo">
-                    <img src="./images/logo.svg" alt="logo">
-                </div>
-                <!--MENU-->
-                <div>
-                    <img src="./images/icon-hamburger.svg" alt="menu hamburguesa">
-                </div>
-            </nav>
-            <div>
-                <div>
-                     <h1>IMMERSIVE EXPERIENCES THAT DELIVERS</h1>
-                 </div>
-            </div>
+      <!--PROPIEDAD CONTAINER WIDTH SE REPITE LOS ATRIBUTOS -->
+      <nav class="container-width">
+        <!-- LOGO VA AQUI -->
+        <div>
+          <a href="">
+            <img src="./images/logo.svg" alt="" />
+          </a>
+        </div>
+        <ul class="menu">
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Carrers</a>
+          </li>
+          <li>
+            <a href="#">Events</a>
+          </li>
+          <li>
+            <a href="#">Products</a>
+          </li>
+          <li>
+            <a href="#">Support</a>
+          </li>
+        </ul>
+        <!-- MENU DE HAMBURGUESA  -->
+        <div class="container-btn-burguer">
+          <button id="btn-menu-burguer" class="menu-burguer">
+            <img src="./images/icon-hamburger.svg" alt="" />
+          </button>
+        </div>
+        <!-- MENU LISTA -->
+        <div class="menu-float">
+          <div class="menu-float-header">
+            <img src="./images/logo.svg" alt="" />
+            <button id="btn-menu-close">
+              <img src="./images/icon-close.svg" />
+            </button>
+          </div>
+          <!-- UL LISTA SE REPITE PARA LA LISTA DEL MENU FLOAT-->
+          <div>
+               <ul class="menu-float-list">
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Carrers</a>
+              </li>
+              <li>
+                <a href="#">Events</a>
+              </li>
+              <li>
+                <a href="#">Products</a>
+              </li>
+              <li>
+                <a href="#">Support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container-width">
+        <div>
+          <h1>IMMERSIVE EXPERIENCES THAT DELIVER</h1>
+        </div>
+      </div>
     </header>
     <main>
-        <section class="container">
-            <div class="container-intro">
-                <img src="./images/mobile/image-interactive.jpg" width="400" alt="VR-Interactive">
-            </div>
+      <section class="container container-width">
+        <div class="container-intro">
+          <picture>
+            <source
+              media="(min-width:1025px)"
+              srcset="./images/desktop/image-interactive.jpg"
+            />
+            <img src="./images/mobile/image-interactive.jpg" width="400" />
+          </picture>
+          <div>
             <h2 class="text-2xl">THE LEADER IN INTERACTIVE VR</h2>
-            <P>Founded in 2011, Loopstudios has been producing world-class virtual
-            reality projects for some of the best companies around the globe.
-            Uur award-winning creations have transformed businesses through
-            digital experiences that bind to their brand</P>
-        </section>
-
-       <section class="container">
-        <h2 class="text-2xl">OUR CREATIONS</h2>
+            <p>
+              Founded in 2011, Loopstudios has been producing world-class
+              virtual reality projects for some of the best companies around the
+              globe. Uur award-winning creations have transformed businesses
+              through digital experiences that bind to their brand
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="container container-width">
+        <div class="container-creation-header">
+          <h2 class="text-2xl">OUR CREATIONS</h2>
+          <div class="container-button hidden-m">
+            <button>SEE ALL</button>
+          </div>
+        </div>
         <div class="container-creations">
           <div class="creation-1 creation">
             <h4>DEEP EARTH</h4>
@@ -70,14 +135,72 @@
             <h4>MAKE IT FISHEYE</h4>
           </div>
         </div>
-                
-
-        </section>
-
+        <div class="container-button hidden">
+          <button>SEE ALL</button>
+        </div>
+      </section>
     </main>
-
     <footer>
-
+      <div>
+        <nav class="menu-footer">
+          <div>
+            <img src="./images/logo.svg" alt="" />
+          </div>
+          <div>
+            <ul class="menu-footer-list">
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Carrers</a>
+              </li>
+              <li>
+                <a href="#">Events</a>
+              </li>
+              <li>
+                <a href="#">Products</a>
+              </li>
+              <li>
+                <a href="#">Support</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-social-media">
+        <a href="">
+          <img src="./images/icon-facebook.svg" alt="" />
+        </a>
+        <a href="">
+          <img src="./images/icon-twitter.svg" alt="" />
+        </a>
+        <a href="">
+          <img src="./images/icon-pinterest.svg" alt="" />
+        </a>
+        <a href="">
+          <img src="./images/icon-instagram.svg" alt="" />
+        </a>
+      </div>
+      <div class="footer-text">
+        <p>© 2025 Loopstudios. All rights reserved</p>
+      </div>
     </footer>
-</body>
+    <script>
+      // Abrir el menu
+      document
+        .querySelector("#btn-menu-burguer")
+        .addEventListener("click", function () {
+          document.querySelector(".menu-float").style.display = "block";
+          document.body.style.overflow = "hidden";
+        });
+
+      // Cerrar el menu
+      document
+        .querySelector("#btn-menu-close")
+        .addEventListener("click", function () {
+          document.querySelector(".menu-float").style.display = "none";
+          document.body.style.overflow = "auto";
+        });
+    </script>
+  </body>
 </html>
