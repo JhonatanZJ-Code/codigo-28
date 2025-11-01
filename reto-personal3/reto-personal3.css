@@ -1,0 +1,122 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(225, 100%, 94%);
+}
+
+/*este es mi container el card*/
+.order-summary {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.ilustra img {
+  width: 100%;
+  display: block;
+}
+
+
+.summary {
+  padding: 16px;
+}
+
+.summary h1 {
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: hsl(223, 47%, 23%);
+}
+
+.summary p {
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+  line-height: 1.5;  /*line heigth = interlineado 1.5pt*/
+}
+
+/*selecion de plan*/
+.plan {
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 24px;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.plan img {
+  width: 40px;
+}
+
+.plan .category {
+  flex: 1;
+  margin-left: 15px;
+  text-align: left;
+}
+
+.plan h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+}
+
+.plan p {
+  color: hsl(224, 23%, 55%);
+  margin-top: 4px;
+}
+
+.plan a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  text-decoration: underline; /* subrayado de texto*/
+  font-size: 14px;
+}
+
+/*boton de pago*/
+.payment {
+  margin: 20px;
+}
+
+.payment button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 700;
+/*estos 2 sirven para darle una animacion al cambio de color durante el hover*/
+  cursor: pointer;
+  transition: 0.3s;
+}
+   /*:hover usar para darle efectos cuando el puntero este encima del elemento ejemplo cambio de color*/
+.payment button:hover {
+  background-color: hsl(245, 83%, 68%);
+}
+
+.payment a {
+  display: block;
+  margin-top: 16px;
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  font-weight: 700;
+}
+   /*a:hover cambio de color a negro*/
+.payment a:hover {
+  color: hsl(223, 47%, 23%);
+}
