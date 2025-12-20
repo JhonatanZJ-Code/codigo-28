@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Document Object Model</title>
+    
+   <!-- <style>
+     p , div , form, { 
+        border: 1px solid blue;
+        margin: 10px;
+     }
+     </style> -->
+</head>
+<body>
+    <!--<header>
+        header
+    </header>
+    <main>
+        main
+    </main>
+    <footer>
+        footer
+    </footer> -->
+
+    <!--<ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>  -->
+  <!--EVENTOS PARA ATRIBUTOS Y PROPIEDADES  
+                             -->
+   <!-- <button onclick="hello()">click</button>
+    <button onmouseover="hello()" onmouseout="bye()">click me 2</button>
+
+    <script>function hello(){
+        alert('Hola Mundo')
+    }
+     function bye(){alart("adios mundo!")} 
+     </script>
+     -->
+  
+    <!--<button>click</button>
+    <button>click</button> -->
+    <!-- registramos eventos a traves de atributo y sus propiedades -->
+   <!--     <script>
+        function hello(){
+        alert('Hola Mundo')
+    }
+     function bye(){alert("adios mundo!")}
+
+     
+    /*const button= document.querySelector("button");
+     console.log("button %0",button)
+     */
+    
+     /*button.onmouseover=hello;
+       button.onmouseout=bye; */
+
+    const button= document.querySelector("button");
+    
+    
+   /* button.addEventListener("click",function(){
+        console.log("click 1!!!")
+    })
+    button.addEventListener("click",function(){
+        console.log("click 2!!!")
+    })*/
+
+    button.addEventListener("click",hello)
+    button.addEventListener("click",bye)
+    button.removeEventListener("click",hello)
+    </script>  -->
+
+  <!--esta son las diferencias entre usar las propiedads y 
+      usando addEventlistener-->
+
+
+        <!-- EVENT OBJECT PARTE 6 DEL VIDEO DEL DOM SEMANA 5 -->
+
+   <!--    <a href="$">Link</a>
+        <form action="">
+            <input type="text">
+            <button>Enviar</button>
+
+        </form>
+<script>
+    function hello(){alert('Hola Mundo')}
+    function bye(){alert("adios mundo!")}
+
+    const button= document.querySelector("button");
+    button.addEventListener("click",function(event){
+        event.preventDefault();
+    })
+    //button.addEventListener("click",function(event)
+
+   // button.addEventListener("click",function(){}
+  //  button.removeEventListener("click",hello)
+   const form=document.querySelector("form");
+   form.addEventListener("submit",function(event){
+    event.preventDefault()
+    console.log("function!!", event.target.querySelector("input"))   })
+       
+</script>  -->
+   
+<!--
+      <form action="">
+        form 
+        <div>
+            div <p>
+                p 
+            </p>
+        </div>
+      </form>
+
+      <script>
+        const form=document.querySelector("form");
+        const div=document.querySelector("div");
+        const p=document.querySelector("p");
+
+        form.addEventListener("click",function(e){
+            
+            e.stopPropagation
+            alert("form")
+        },true)
+         div.addEventListener("click",function(e){
+            
+            e.stopPropagation
+            alert("div")
+        })
+         p.addEventListener("click",function(e){
+            e.stopPropagation
+            alert("p")
+        })
+      </script>  -->
+
+   <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+   </ul>
+
+   <script>
+   //  const lis= document.querySelector("li");
+   // lis.forEach (function (li) { 
+   //    lis.addEventListener("click",function (e) {
+   //         console.log("this",this,e.target)
+   //     })
+   // })
+   
+   const ul= document.querySelector("ul");
+   ul.addEventListener("click", function(e){
+    
+    console.log("e.target",e.target.tagName)})      // con target me muestra el evento del a etiqueta padre
+   </script>
+</body>
+</html>
